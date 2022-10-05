@@ -1,0 +1,4 @@
+/node_modules
+dist
+yarm.lock
+.env
