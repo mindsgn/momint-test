@@ -1,7 +1,7 @@
 import { Router } from "express";
-import * as user from "../controller/nft.controller";
+import * as nft from "../controller/nft.controller";
 const router = Router();
 
-router.get("/nft", user.getFollowerNft);
+router.get("/nft/:nftid/owner", nft.getNft);
 
 export default router;

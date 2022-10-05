@@ -4,7 +4,7 @@ import user from './route/user.route';
 import nft from './route/nft.route';
 import cors from "cors";
 import helmet from 'helmet';
-import './database';
+import './lib/database';
 dotenv.config();
 
 const app: any = express();

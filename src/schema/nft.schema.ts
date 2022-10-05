@@ -2,7 +2,7 @@ import dotenv from 'dotenv';
 import { Schema, model } from "mongoose";
 dotenv.config()
 
-const userSchema = new Schema(
+const nftSchema = new Schema(
   {
     name: {
       type: String,
@@ -18,4 +18,4 @@ const userSchema = new Schema(
   },
 );
 
-export default model("Nft", userSchema, "nft");
+export default model("Nft", nftSchema, "nft");
