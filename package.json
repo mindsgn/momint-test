@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "tsc --watch .ts --outDir ./dist \"nodemon ./dist/app.js\"",
     "build": "tsc --watch .ts --outDir ./dist \"nodemon ./dist/app.js\"",
-    "start": "concurrently \"nodemon dist/app.js\"",
+    "start": "tsc && nodemon dist/app.js",
     "watch-ts": "tsc -w",
     "watch-node": "concurrently \"nodemon dist/app.js\"",
     "watch": "concurrently -k -p \"[{name}]\" -n \"TypeScript, Node\" -c \"yello.bold, cyan.bold\" \"yarn run watch-ts\" \"yarn run watch-node\""

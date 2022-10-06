@@ -4,7 +4,7 @@ import { ethers, providers, BigNumber, } from 'ethers'
 import nft from "../schema/nft.schema";
 import user from "../schema/user.schema";
 import { token } from "morgan";
-const contractABI = require("../abi/contract.json");
+const contractABI = require("../../abi/contract.json");
 
 //get ownership address
 export const getOwnership: RequestHandler = async (req: any, res: any) => {
